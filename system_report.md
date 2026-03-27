@@ -14,16 +14,16 @@
 
 ```mermaid
 graph TD
-    subgraph 邊緣端 (Edge)
+    subgraph "邊緣端 (Edge)"
         ESP32[ESP32 模擬器程式\n產生 DHT11 數據]
     end
 
-    subgraph 伺服器端 (Server)
+    subgraph "伺服器端 (Server)"
         API[Flask REST API\n提供 /sensor 接收資料]
         DB[(SQLite3 資料庫\n記錄歷史感測數據)]
     end
 
-    subgraph 使用者介面 (Client)
+    subgraph "使用者介面 (Client)"
         UI[Streamlit 動態儀表板\n分析與視覺化]
     end
 
