@@ -1,4 +1,0 @@
-flask
-streamlit
-requests
-pandas
